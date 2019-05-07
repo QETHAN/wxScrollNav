@@ -1,0 +1,18 @@
+<scroll-view 
+scroll-x 
+scroll-left="{{scrollLeft}}"
+class="swiper-nav" 
+scroll-with-animation 
+bindtap="handleSwiperNav"
+bindscroll="scrollMove">
+
+  <text 
+  class='item-nav {{swiperNav.i==index ? "active" : ""}}' 
+  wx:for="{{swiperNav.arr}}" 
+  wx:key="{{index}}" 
+  data-i="{{index}}"
+  id="ele{{index}}">
+    {{item.txt}}
+  </text>
+
+</scroll-view>

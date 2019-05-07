@@ -1,0 +1,25 @@
+/*横向导航*/
+.swiper-nav {
+  background-color: #fff;
+  white-space: nowrap;
+}
+.swiper-nav .item-nav {
+  position: relative;
+  padding: 30rpx 32rpx;
+  color: #999;
+  font-size: 30rpx;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.swiper-nav .active {color: #f43838}
+.swiper-nav .active::after {
+  content:'';
+  position: absolute;
+  left: 32rpx;
+  right: 32rpx;
+  height:0;
+  border-bottom: 4rpx solid #f43838;
+  border-radius: 4rpx;
+  bottom: 18rpx
+}
